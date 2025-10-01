@@ -1,0 +1,17 @@
+C:\Users\fodorr\source\repos\TraderWPF\TraderWPF\bin\Debug\TraderWPF.exe.config
+C:\Users\fodorr\source\repos\TraderWPF\TraderWPF\bin\Debug\TraderWPF.exe
+C:\Users\fodorr\source\repos\TraderWPF\TraderWPF\bin\Debug\TraderWPF.pdb
+C:\Users\fodorr\source\repos\TraderWPF\TraderWPF\obj\Debug\TraderWPF.csproj.AssemblyReference.cache
+C:\Users\fodorr\source\repos\TraderWPF\TraderWPF\obj\Debug\MainWindow.g.cs
+C:\Users\fodorr\source\repos\TraderWPF\TraderWPF\obj\Debug\Page1.g.cs
+C:\Users\fodorr\source\repos\TraderWPF\TraderWPF\obj\Debug\App.g.cs
+C:\Users\fodorr\source\repos\TraderWPF\TraderWPF\obj\Debug\TraderWPF_MarkupCompile.cache
+C:\Users\fodorr\source\repos\TraderWPF\TraderWPF\obj\Debug\TraderWPF_MarkupCompile.lref
+C:\Users\fodorr\source\repos\TraderWPF\TraderWPF\obj\Debug\MainWindow.baml
+C:\Users\fodorr\source\repos\TraderWPF\TraderWPF\obj\Debug\Page1.baml
+C:\Users\fodorr\source\repos\TraderWPF\TraderWPF\obj\Debug\TraderWPF.g.resources
+C:\Users\fodorr\source\repos\TraderWPF\TraderWPF\obj\Debug\TraderWPF.Properties.Resources.resources
+C:\Users\fodorr\source\repos\TraderWPF\TraderWPF\obj\Debug\TraderWPF.csproj.GenerateResource.cache
+C:\Users\fodorr\source\repos\TraderWPF\TraderWPF\obj\Debug\TraderWPF.csproj.CoreCompileInputs.cache
+C:\Users\fodorr\source\repos\TraderWPF\TraderWPF\obj\Debug\TraderWPF.exe
+C:\Users\fodorr\source\repos\TraderWPF\TraderWPF\obj\Debug\TraderWPF.pdb
