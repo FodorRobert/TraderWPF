@@ -20,9 +20,38 @@ namespace TraderWPF
     /// </summary>
     public partial class Page1 : Page
     {
+
+        private readonly Databasestatements db = new Databasestatements();
+
         public Page1()
         {
+
             InitializeComponent();
+
+        }
+
+        private void regButton_Click(object sender, RoutedEventArgs e)
+        {
+
+            if (userPasswordPassBox.Password == userPasswordPassBox2.Password)
+            {
+                var user = new
+                {
+                    User = userUsernameTextBox.Text,
+                    Password = userPasswordPassBox.Password,
+                    FullName = userFullNameTextBox.Text,
+                    Salt = "",
+                    Email = userEmailTextBox.Text,
+                };
+
+                MessageBox.Show(db.AddNewUser(user).ToString());
+
+            }
+            else
+            {
+                MessageBox.Show("Eltérő jelszavak");
+            }
+
         }
     }
 }
