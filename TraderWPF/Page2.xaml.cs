@@ -24,5 +24,36 @@ namespace TraderWPF
         {
             InitializeComponent();
         }
+
+        private readonly Databasestatements db = new Databasestatements();
+        private readonly MainWindow _mainWindow;
+
+        public Page2(MainWindow mainWindow)
+        {
+            InitializeComponent();
+            _mainWindow = mainWindow;
+        }
+
+        private void regButton_Click(object sender, RoutedEventArgs e)
+        {
+            if (userPasswordPassBox.Password == userPasswordPassBox2.Password)
+            {
+                var user = new
+                {
+                    UserName = userUsernameTextBox.Text,
+                    UserPassword = userPasswordPassBox.Password,
+                    Fullname = userFullNameTextBox.Text,
+                    Salt = "",
+                    Email = userEmailTextBox.Text
+                };
+
+                MessageBox.Show(db.AddNewUser(user).ToString());
+                _mainWindow.Startwindow.Navigate(new Page1(_mainWindow));
+            }
+            else
+            {
+                MessageBox.Show("Eltérő jelszavak");
+            }
+        }
     }
 }

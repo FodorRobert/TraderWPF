@@ -49,3 +49,4 @@ C:\Users\fodorr\source\repos\TraderWPF\TraderWPF\bin\Debug\System.Runtime.Compil
 C:\Users\fodorr\source\repos\TraderWPF\TraderWPF\bin\Debug\System.Threading.Tasks.Extensions.xml
 C:\Users\fodorr\source\repos\TraderWPF\TraderWPF\obj\Debug\TraderWPF.exe.config
 C:\Users\fodorr\source\repos\TraderWPF\TraderWPF\obj\Debug\TraderWPF.csproj.Up2Date
+C:\Users\fodorr\source\repos\TraderWPF\TraderWPF\obj\Debug\Page2.g.cs

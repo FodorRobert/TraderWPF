@@ -21,38 +21,36 @@ namespace TraderWPF
     public partial class Page1 : Page
     {
 
-        private readonly Databasestatements db = new Databasestatements();
+        private readonly Databasestatements _databaseStatements = new Databasestatements();
+        private readonly MainWindow _mainWindow;
 
-        public Page1()
+        public Page1(MainWindow mainWindow)
         {
 
             InitializeComponent();
+            _mainWindow = mainWindow;
 
         }
 
-        private void regButton_Click(object sender, RoutedEventArgs e)
+        private void logButton_Click(object sender, RoutedEventArgs e)
         {
 
-            if (userPasswordPassBox.Password == userPasswordPassBox2.Password)
+            var user = new
             {
-                var user = new
-                {
 
-                    User = userUsernameTextBox.Text,
-                    UserPassword = userPasswordPassBox.Password,
-                    FullName = userFullNameTextBox.Text,
-                    Salt = "",
-                    Email = userEmailTextBox.Text,
+                Name = userUsernameTextBox.Text,
+                Pass = userPasswordPassBox.Password,
 
-                };
+            };
 
-                MessageBox.Show(db.AddNewUser(user).ToString());
+            MessageBox.Show(_databaseStatements.LogInUser(user).ToString());
+            
+        }
 
-            }
-            else
-            {
-                MessageBox.Show("Eltérő jelszavak");
-            }
+        private void regLink_Click(object sender, RoutedEventArgs e)
+        {
+
+            _mainWindow.Startwindow.Navigate(new Page2(_mainWindow));
 
         }
     }
