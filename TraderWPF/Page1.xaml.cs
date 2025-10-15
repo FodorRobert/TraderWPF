@@ -37,11 +37,13 @@ namespace TraderWPF
             {
                 var user = new
                 {
+
                     User = userUsernameTextBox.Text,
-                    Password = userPasswordPassBox.Password,
+                    UserPassword = userPasswordPassBox.Password,
                     FullName = userFullNameTextBox.Text,
                     Salt = "",
                     Email = userEmailTextBox.Text,
+
                 };
 
                 MessageBox.Show(db.AddNewUser(user).ToString());

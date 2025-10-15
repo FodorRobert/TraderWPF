@@ -13,9 +13,6 @@
             <RowDefinition Height="auto"/>
             <RowDefinition Height="auto"/>
             <RowDefinition Height="auto"/>
-            <RowDefinition Height="auto"/>
-            <RowDefinition Height="auto"/>
-            <RowDefinition Height="auto"/>
         </Grid.RowDefinitions>
 
         <Grid.ColumnDefinitions>
@@ -41,36 +38,10 @@
             Grid.Column="0"
             Grid.Row="1"
         />
-        <TextBlock
-            Text="Jelszó újra"
-            FontSize="15"
-            FontWeight="Bold"
-            HorizontalAlignment="Right"
-            VerticalAlignment="Center"
-            Grid.Column="0"
-            Grid.Row="2"
-        />
-        <TextBlock
-            Text="Teljes név"
-            FontSize="15"
-            FontWeight="Bold"
-            HorizontalAlignment="Right"
-            VerticalAlignment="Center"
-            Grid.Column="0"
-            Grid.Row="3"
-        />
-        <TextBlock
-            Text="Email"
-            FontSize="15"
-            FontWeight="Bold"
-            HorizontalAlignment="Right"
-            VerticalAlignment="Center"
-            Grid.Column="0"
-            Grid.Row="4"
-        />
         <TextBox
             x:Name="userUsernameTextBox"
             FontSize="15"
+            Width="300"
             HorizontalAlignment="Left"
             VerticalAlignment="Center"
             Margin="10,10,10,10"
@@ -80,48 +51,22 @@
         <PasswordBox
             x:Name="userPasswordPassBox"
             FontSize="15"
+            Width="300"
             HorizontalAlignment="Left"
             VerticalAlignment="Center"
             Margin="10,10,10,10"
             Grid.Row="1"
             Grid.Column="1"
         />
-        <PasswordBox
-            x:Name="userPasswordPassBox2"
-            FontSize="15"
-            HorizontalAlignment="Left"
-            VerticalAlignment="Center"
-            Margin="10,10,10,10"
-            Grid.Row="2"
-            Grid.Column="1"
-        />
-        <TextBox
-            x:Name="userFullNameTextBox"
-            FontSize="15"
-            HorizontalAlignment="Left"
-            VerticalAlignment="Center"
-            Margin="10,10,10,10"
-            Grid.Row="3"
-            Grid.Column="1"
-        />
-        <TextBox
-            x:Name="userEmailTextBox"
-            FontSize="15"
-            HorizontalAlignment="Left"
-            VerticalAlignment="Center"
-            Margin="10,10,10,10"
-            Grid.Row="4"
-            Grid.Column="1"
-        />
         <StackPanel Grid.Row="5" Grid.Column="0" Height="auto">
             <Button
-                x:Name="regButton"
-                Content="Regisztrálás"
+                x:Name="logButton"
+                Content="Belépés"
                 FontSize="23"
                 Margin="15"
                 Background="Red"
                 Foreground="White"
-                Click="regButton_Click"
+                Click="logButton_Click"
             />
         </StackPanel>
     </Grid>
