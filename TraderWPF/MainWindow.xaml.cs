@@ -23,7 +23,7 @@ namespace TraderWPF
         public MainWindow()
         {
             InitializeComponent();
-            Startwindow.Navigate(new AdminPage(this));
+            Startwindow.Navigate(new Page2(this));
         }
     }
 }

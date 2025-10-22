@@ -19,6 +19,10 @@ namespace TraderWPF
             try
             {
                 conn._connection.Open();
+                var NewUser = user.GetType().GetProperties();
+
+                string salt = generateSalt();
+                string hashedPassword = ComputeHmacSha256(NewUser[2].GetValue(user).ToString(), salt);
 
                 string sql = "INSERT INTO `users`(`UserName`, `FullName`, `Password`, `Salt`, `Email`) VALUES (@username, @fullname, @password, @salt, @email)";
 
@@ -28,8 +32,8 @@ namespace TraderWPF
 
                 cmd.Parameters.AddWithValue("@usernme", newUser[0].GetValue(user));
                 cmd.Parameters.AddWithValue("@fullname", newUser[1].GetValue(user));
-                cmd.Parameters.AddWithValue("@password", newUser[2].GetValue(user));
-                cmd.Parameters.AddWithValue("@salt", newUser[3].GetValue(user));
+                cmd.Parameters.AddWithValue("@password", hashedPassword);
+                cmd.Parameters.AddWithValue("@salt", salt);
                 cmd.Parameters.AddWithValue("@email", newUser[4].GetValue(user));
 
                 cmd.ExecuteNonQuery();
